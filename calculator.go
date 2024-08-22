@@ -62,11 +62,11 @@ func expressionArab(input string) (int, error) {
 		if errOne != nil || errTwo != nil {
 			panic("Что-то пошло не так...")
 		}
-		if numbOne < 0 || numbOne > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbOne <= 0 || numbOne > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
-		if numbTwo < 0 || numbTwo > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbTwo <= 0 || numbTwo > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
 		return fmt.Println(numbOne + numbTwo)
 	} else if strings.Contains(input, "-") {
@@ -79,11 +79,11 @@ func expressionArab(input string) (int, error) {
 		if errOne != nil || errTwo != nil {
 			panic("Что-то пошло не так...")
 		}
-		if numbOne < 0 || numbOne > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbOne <= 0 || numbOne > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
-		if numbTwo < 0 || numbTwo > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbTwo <= 0 || numbTwo > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
 		return fmt.Println(numbOne - numbTwo)
 
@@ -97,11 +97,11 @@ func expressionArab(input string) (int, error) {
 		if errOne != nil || errTwo != nil {
 			panic("Что-то пошло не так...")
 		}
-		if numbOne < 0 || numbOne > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbOne <= 0 || numbOne > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
-		if numbTwo < 0 || numbTwo > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbTwo <= 0 || numbTwo > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
 		return fmt.Println(numbOne * numbTwo)
 	} else if strings.Contains(input, "/") {
@@ -114,11 +114,11 @@ func expressionArab(input string) (int, error) {
 		if errOne != nil || errTwo != nil {
 			panic("Что-то пошло не так...")
 		}
-		if numbOne < 0 || numbOne > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbOne <= 0 || numbOne > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
-		if numbTwo < 0 || numbTwo > 10 {
-			panic("Значениями могут быть только цифры от 0 до 10!")
+		if numbTwo <= 0 || numbTwo > 10 {
+			panic("Значениями могут быть только цифры от 1 до 10!")
 		}
 		return fmt.Println(numbOne / numbTwo)
 	} else {
