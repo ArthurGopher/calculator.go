@@ -169,7 +169,7 @@ func expressionRome(input string) (string, error) {
 			panic("Неверные римские числа или римское число больше десяти")
 		}
 		result := digitOne + digitTwo
-		if result < 1 || result > 100 {
+		if result < 0 || result > 100 {
 			panic("Результат не может быть меньше нуля!")
 		}
 		return (arabToRome[result]), nil // обратно в римские
@@ -187,7 +187,7 @@ func expressionRome(input string) (string, error) {
 			panic("Неверные римские числа или римское число больше десяти")
 		}
 		result := digitOne - digitTwo
-		if result < 1 || result > 100 {
+		if result < 0 || result > 100 {
 			panic("Результат не может быть меньше нуля!")
 		}
 		return (arabToRome[result]), nil
@@ -205,7 +205,7 @@ func expressionRome(input string) (string, error) {
 			panic("Неверные римские числа или римское число больше десяти")
 		}
 		result := digitOne * digitTwo
-		if result < 1 || result > 100 {
+		if result < 0 || result > 100 {
 			panic("Результат не может быть меньше нуля!")
 		}
 		return (arabToRome[result]), nil
@@ -223,7 +223,7 @@ func expressionRome(input string) (string, error) {
 			panic("Неверные римские числа или римское число больше десяти")
 		}
 		result := digitOne / digitTwo
-		if result < 1 || result > 100 {
+		if result < 0 || result > 100 {
 			panic("Результат не может быть меньше нуля!")
 		}
 		return (arabToRome[result]), nil
